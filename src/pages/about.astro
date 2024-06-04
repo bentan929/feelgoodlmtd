@@ -1,5 +1,12 @@
 ---
+const pageTitle = "About";
 
+const tagLine = "Everyone deserves to feel good";
+
+const whoAmI = {
+    firstName: "Ben",
+    occupation: "Unemployed",
+};
 ---
 
 <html lang="en">
@@ -12,9 +19,10 @@
 	</head>
 	<body>
         <a href="/">Home<a>
-		<a href="/about">About<a>
+		<a href="/about">{pageTitle}<a>
 		<a href="/blog">Blog<a>
-		<h1>About</h1>
-        <p>Everyone deserves to feel good about themselves</p>
+		<h1>{pageTitle}</h1>
+        <p>{tagLine}</p>
+        <p>This is {whoAmI.firstName}, the {whoAmI.occupation} guy</p>
 	</body>
 </html>
