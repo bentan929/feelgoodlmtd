@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "About";
@@ -36,11 +38,10 @@ const taglineFontStyle = "italic";
     </style>
 	</head>
 	<body>
-        <a href="/">Home<a>
-		<a href="/about">{pageTitle}<a>
-		<a href="/blog">Blog<a>
+        <Navigation/>
 		<h1>{pageTitle}</h1>
         <p class="tagline">{tagline}</p>
         <p>This is {whoAmI.firstName}, the {whoAmI.occupation} guy</p>
+        <Footer/>
 	</body>
 </html>
